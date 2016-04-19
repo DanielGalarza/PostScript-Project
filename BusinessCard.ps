@@ -1,0 +1,100 @@
+%% Daniel Galarza
+%% CS 3210
+%% Spring 2016
+
+
+
+%%%%%%   Draw a giant Square as the card boundaries %%%%%%%
+
+newpath
+150 400 moveto
+0 170 rlineto
+280 0 rlineto
+0 -170 rlineto
+-280 0 rlineto closepath gsave
+
+0.52 0.70 1 setrgbcolor fill grestore
+0 0 0 setrgbcolor
+2 setlinewidth stroke
+
+
+
+%%%%%%   Print my name on the card  %%%%%%%
+
+/Times-Roman findfont
+24 scalefont setfont
+
+newpath
+225 540 moveto
+(Daniel Galarza) true charpath
+1 0.84 0 setrgbcolor fill
+0.5 setlinewidth stroke
+
+
+
+%%%%%%   Print my occupation on the card  %%%%%%%
+
+/Times-Roman findfont
+14 scalefont setfont
+
+newpath
+265 520 moveto
+(Developer) true charpath
+1 0.84 0 setrgbcolor fill
+0.5 setlinewidth stroke
+
+
+
+%%%%%%   Print school name on the card  %%%%%%%
+
+/Times-Roman findfont
+14 scalefont setfont
+
+newpath
+255 500 moveto
+(MSU Denver) true charpath
+1 0.84 0 setrgbcolor fill
+0.5 setlinewidth stroke
+
+
+
+%%%%%%   Print school email on the card  %%%%%%%
+
+/Times-Roman findfont
+14 scalefont setfont
+
+newpath
+225 480 moveto
+(dgalarza@msudenver.edu) true charpath
+1 0.84 0 setrgbcolor fill
+0.5 setlinewidth stroke
+
+
+
+%%%%%%   Print school name on the card  %%%%%%%
+
+/Times-Roman findfont
+14 scalefont setfont
+
+newpath
+253 460 moveto
+(720.555.5555) true charpath
+1 0.84 0 setrgbcolor fill
+0.5 setlinewidth stroke
+
+
+
+%%%%%%   Print my name on the bottom of page   %%%%%%%
+
+/Times-Roman findfont
+12 scalefont setfont
+
+newpath
+505 72 moveto
+0 0 0 setrgbcolor
+(Daniel Galarza) show
+
+
+
+%%%%%%   Print business card  %%%%%%%
+showpage

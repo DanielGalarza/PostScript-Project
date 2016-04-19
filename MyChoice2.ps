@@ -1,0 +1,106 @@
+%% Daniel Galarza
+%% CS 3210
+%% Spring 2016
+%% Box Rainbow
+
+
+%%%%%%   Print my name on the bottom of page  %%%%%%%
+
+/Times-Roman findfont
+12 scalefont setfont
+newpath
+50 72 moveto
+(Daniel Galarza) show
+
+
+
+%%%%%%   Print title  %%%%%%%
+
+/Times-Roman findfont
+28 scalefont setfont
+newpath
+50 700 moveto
+(Block The Rainbow.) show
+
+
+
+%%%%%%   Defining a box obj.   %%%%%%%
+
+/box
+{	0 50 rlineto
+	50 0 rlineto 
+	0 -50 rlineto 
+	-50 0 rlineto closepath gsave
+ } def
+
+
+
+%%%%%%    Making different colored boxes with loops  (to form box rainbow)  %%%%%%%
+
+1 1 350  % Violet blocks
+{
+	100 10 add 200 10 add moveto box
+	.65 .2 0.98 setrgbcolor fill grestore
+	0 0 0 setrgbcolor
+	2 setlinewidth stroke rotate
+} for
+
+
+1 1 250  % Blue blocks
+{
+	140 10 add 240 10 add moveto box
+	0 0 1 setrgbcolor fill grestore
+	0 0 0 setrgbcolor
+	2 setlinewidth stroke rotate
+} for
+
+
+1 1 250  % Cyan blocks
+{
+	180 10 add 260 10 add moveto box
+	0 1 1 setrgbcolor fill grestore
+	0 0 0 setrgbcolor
+	2 setlinewidth stroke rotate
+} for
+
+
+1 1 250  % Green blocks
+{
+	220 10 add 300 10 add moveto box
+	0 1 0 setrgbcolor fill grestore
+	0 0 0 setrgbcolor
+	2 setlinewidth stroke rotate
+} for
+
+
+1 1 300  % Yellow blocks
+{
+	260 10 add 340 10 add moveto box
+	1 .9 0 setrgbcolor fill grestore
+	0 0 0 setrgbcolor
+	2 setlinewidth stroke rotate
+} for
+
+
+1 1 350  % Orange blocks
+{
+	300 10 add 380 10 add moveto box
+	1 0.5 0.5 setrgbcolor fill grestore
+	0 0 0 setrgbcolor
+	2 setlinewidth stroke rotate
+} for
+
+
+1 1 650  % Red blocks
+{
+	340 10 add 420 10 add moveto box
+	1 0 0 setrgbcolor fill grestore
+	0 0 0 setrgbcolor
+	2 setlinewidth stroke rotate
+} for
+
+
+
+%%%%%%   Print Box Rainbow   %%%%%%%
+showpage
+

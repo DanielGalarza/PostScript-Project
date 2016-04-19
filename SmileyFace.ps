@@ -1,0 +1,91 @@
+%% Daniel Galarza
+%% CS 3210
+%% Spring 2016
+%% Smiley Face
+
+
+%%%%%%   Draw a giant circle as the head of smiley face   %%%%%%%
+
+1 0 1 setrgbcolor 	% Setting the color of head
+
+% 306: spacing (left to right)	
+% 500: spacing (up and down) 
+% 100: diameter of circle 
+% 1: Fill in the Circle from left to right	 
+% 0: fill in circle right to left
+310 500 100 1 0 arc closepath fill	% Head of smiley face
+
+
+
+%%%%%%   Draw two half inch yellow circles for eyes   %%%%%%%
+
+0 1 0 setrgbcolor	% Setting the color of eyes
+
+260 530 36 1 0 arc closepath fill  % Left eye
+
+360 530 36 1 0 arc closepath fill	 % Right eye
+
+
+
+%%%%%%   Draw pupils   %%%%%%%
+
+%% Boundary of pupil
+
+0 0 0 setrgbcolor	% Setting the color of pupil boundary
+
+260 530 16 1 0 arc closepath stroke  % Left eye
+
+360 530 16 1 0 arc closepath stroke  % Right eye
+
+
+%% Inside pupil
+
+1 1 1 setrgbcolor	% Setting the color of pupil
+
+260 530 15 1 0 arc closepath fill  % Left eye
+
+360 530 15 1 0 arc closepath fill  % Right eye
+
+
+
+%%%%%%   Draw iris   %%%%%%%
+
+0 0 0 setrgbcolor	% Setting the color of iris
+
+260 530 8 1 0 arc closepath fill  % Left eye
+
+360 530 8 1 0 arc closepath fill  % Right eye
+
+
+
+%%%%%%   Draw the smile  %%%%%%%
+
+
+%0 1 0 setrgbcolor	% Setting color of smile
+
+%5 setlinewidth		% Setting width of smile
+
+%0 setlinecap		% This specifies what the ends of a stroked line look like
+
+%307 465 30 180 360 arc stroke  % The smile
+
+307 465 40 180 360 arc closepath  gsave  % The smile
+
+1 0 0 setrgbcolor fill grestore stroke
+
+
+
+
+%%%%%%   Print my name on the bottom of page %%%%%%%
+
+/Times-Roman findfont
+12 scalefont setfont
+newpath
+500 72 moveto
+(Daniel Galarza) show
+
+
+
+%%%%%%   Print Smiley Face  %%%%%%%
+showpage
+

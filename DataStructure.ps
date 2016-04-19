@@ -1,0 +1,260 @@
+%% Daniel Galarza
+%% CS 3210
+%% Spring 2016
+%% Linked List
+
+
+%%%%%%   Defining a circles as nodes   %%%%%%%
+
+%%% Level 1 %%
+/doNode1
+{ 
+    300 650 50 0 360 arc closepath stroke 
+    
+    newpath
+    300 650 moveto
+    175 550 lineto
+    1 setlinewidth stroke
+
+    newpath
+    300 650 moveto
+    425 550 lineto
+    1 setlinewidth stroke
+
+} def
+
+
+%%% Level 2 %%
+/doNode2
+{ 
+    175 550 40 0 360 arc closepath stroke 
+
+    newpath
+    175 550 moveto
+    110 475 lineto
+    1 setlinewidth stroke
+
+    newpath
+    175 550 moveto
+    240 475 lineto
+    1 setlinewidth stroke
+
+} def
+
+/doNode3
+{ 
+    425 550 40 0 360 arc closepath stroke 
+
+    newpath
+    425 550 moveto
+    360 475 lineto
+    1 setlinewidth stroke
+
+    newpath
+    425 550 moveto
+    490 475 lineto
+    1 setlinewidth stroke
+
+} def
+
+
+%%% Level 3 %%
+/doNode4
+{ 
+    110 475 30 0 360 arc closepath stroke 
+
+    newpath
+    110 475 moveto
+    75 425 lineto
+    1 setlinewidth stroke
+
+    newpath
+    110 475 moveto
+    145 425 lineto
+    1 setlinewidth stroke
+
+} def
+
+/doNode5
+{ 
+    240 475 30 0 360 arc closepath stroke 
+
+    newpath
+    240 475 moveto
+    205 425 lineto
+    1 setlinewidth stroke
+
+    newpath
+    240 475 moveto
+    275 425 lineto
+    1 setlinewidth stroke
+} def
+
+/doNode6
+{ 
+    360 475 30 0 360 arc closepath stroke 
+
+    newpath
+    360 475 moveto
+    325 425 lineto
+    1 setlinewidth stroke
+
+    newpath
+    360 475 moveto
+    395 425 lineto
+    1 setlinewidth stroke
+
+} def
+
+/doNode7
+{ 
+    490 475 30 0 360 arc closepath stroke 
+
+    newpath
+    490 475 moveto
+    455 425 lineto
+    1 setlinewidth stroke
+
+    newpath
+    490 475 moveto
+    525 425 lineto
+    1 setlinewidth stroke
+
+} def
+
+
+%%% Level 4 %%
+/doNode8
+{ 
+    75 425 20 0 360 arc closepath stroke 
+} def
+
+/doNode9
+{ 
+    145 425 20 0 360 arc closepath stroke 
+} def
+
+/doNode10
+{ 
+    205 425 20 0 360 arc closepath stroke
+
+    newpath
+    205 425 moveto
+    190 390 lineto
+    1 setlinewidth stroke 
+
+    newpath
+    205 425 moveto
+    220 390 lineto
+    1 setlinewidth stroke 
+} def
+
+/doNode11
+{ 
+    275 425 20 0 360 arc closepath stroke 
+} def
+
+/doNode12
+{ 
+    325 425 20 0 360 arc closepath stroke 
+} def
+
+/doNode13
+{ 
+    395 425 20 0 360 arc closepath stroke 
+
+    newpath
+    395 425 moveto
+    380 390 lineto
+    1 setlinewidth stroke 
+
+    newpath
+    395 425 moveto
+    410 390 lineto
+    1 setlinewidth stroke 
+
+} def
+
+/doNode14
+{ 
+    455 425 20 0 360 arc closepath stroke 
+} def
+
+/doNode15
+{ 
+    525 425 20 0 360 arc closepath stroke 
+} def
+
+%%%%% Level 5  %%
+
+/doNode16
+{ 
+    190 390 10 0 360 arc closepath stroke 
+} def
+
+/doNode17
+{ 
+    220 390 10 0 360 arc closepath stroke 
+} def
+
+/doNode18
+{ 
+    380 390 10 0 360 arc closepath stroke 
+} def
+
+/doNode19
+{ 
+    410 390 10 0 360 arc closepath stroke 
+} def
+
+
+%%%%%%   defining function to print my name on the bottom of page  %%%%%%%
+/printName
+{
+    /Times-Roman findfont
+    12 scalefont setfont
+    newpath
+    50 72 moveto
+    (Daniel Galarza) show
+
+} def
+
+
+
+%%%%%%   defining function to print title  %%%%%%%
+/printTitle
+{
+    /Times-Roman findfont
+    20 scalefont setfont
+    newpath
+    250 300 moveto
+    (Binary Tree) show
+
+} def
+
+
+%%%%%%   Print my objects  %%%%%%%
+
+doNode1
+doNode2
+doNode3
+doNode4
+doNode5
+doNode6
+doNode7
+doNode8
+doNode9
+doNode10
+doNode11
+doNode12
+doNode13
+doNode14
+doNode15
+doNode16
+doNode17
+doNode18
+doNode19
+printName
+printTitle
+showpage
+

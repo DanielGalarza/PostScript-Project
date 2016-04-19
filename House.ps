@@ -1,0 +1,94 @@
+%% Daniel Galarza
+%% CS 3210
+%% Spring 2016
+%% House
+
+
+%%%%%%   Draw square as the body of the house   %%%%%%%
+
+newpath
+165 200 moveto
+0 300 rlineto
+300 0 rlineto
+0 -300 rlineto
+-300 0 rlineto closepath gsave
+
+0.52 0.8 1 setrgbcolor fill grestore
+0 0 0 setrgbcolor
+2 setlinewidth stroke
+
+
+
+
+%%%%%%   Draw triangle as the roof of the house   %%%%%%%
+
+newpath
+100 500 moveto
+540 500 lineto
+320	600 lineto closepath gsave
+
+0.6 0.16 0.16 setrgbcolor fill grestore
+2 setlinewidth
+0 0 0 setrgbcolor stroke
+
+
+
+
+%%%%%%   Draw rectangle as the door of the house   %%%%%%%
+
+newpath
+280 200 moveto
+347 200 lineto
+347	300 lineto 
+280	300 lineto closepath gsave
+
+0.6 0.16 0.16 setrgbcolor fill grestore
+0 0 0 setrgbcolor
+2 setlinewidth stroke
+
+
+
+
+%%%%%%   Draw squares as the windows of the house   %%%%%%%
+
+%% Window #1
+
+newpath
+230 400 moveto
+0 50 rlineto
+50 0 rlineto 
+0 -50 rlineto 
+-50 0 rlineto closepath gsave
+
+1 1 1 setrgbcolor fill grestore
+0 0 0 setrgbcolor
+2 setlinewidth stroke
+
+%% Window #2
+
+newpath
+360 400 moveto
+0 50 rlineto
+50 0 rlineto 
+0 -50 rlineto 
+-50 0 rlineto closepath gsave
+
+1 1 1 setrgbcolor fill grestore
+0 0 0 setrgbcolor
+2 setlinewidth stroke
+
+
+
+
+%%%%%%   Print my name on the bottom of page %%%%%%%
+
+/Times-Roman findfont
+12 scalefont setfont
+newpath
+500 72 moveto
+(Daniel Galarza) show
+
+
+
+%%%%%%   Print House  %%%%%%%
+showpage

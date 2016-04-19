@@ -1,0 +1,30 @@
+%% Daniel Galarza
+%% CS 3210
+%% Spring 2016
+%% Wierd Spiral
+
+
+%%%%%%   Print my name on the bottom of page  %%%%%%%
+
+/Times-Roman findfont
+12 scalefont setfont
+newpath
+500 72 moveto
+(Daniel Galarza) show
+
+
+%%%%%%   Draw my picture of retro spiral   %%%%%%%
+
+300 400 translate 
+
+0 0 moveto 
+
+10 .005 500 
+{ 	dup 
+	0 moveto 
+	1 lineto stroke 
+	1 rotate        } for
+
+
+%%%%%%   Print Spiral  %%%%%%%
+showpage
